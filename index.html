@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Logo</a>
+            <ul class="nav-links">
+                <li onclick="navigateTo('index.html')"><a>Inicio</a></li>
+                <li><a href="#cards">Secciones</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cards" class="cards-container">
+            <div class="card" onclick="navigateTo('cuestionario.html')">
+                <h3>Cuestionario para el Auditor</h3>
+                <p>Resuelve las preguntas y evalúa.</p>
+            </div>
+            <div class="card" onclick="navigateTo('guia.html')">
+                <h3>Guía para Auditar los Sistemas de Información</h3>
+                <p>Explora cómo auditar eficientemente.</p>
+            </div>
+            <div class="card" onclick="navigateTo('normas_cubanas.html')">
+                <h3>Normas y Resoluciones Cubanas</h3>
+                <p>Conoce las normativas del MINCOM.</p>
+            </div>
+            <div class="card" onclick="navigateTo('normas_iso.html')">
+                <h3>Normas ISO</h3>
+                <p>Estándares internacionales clave.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2024 - Universidad de Matanzas | Diseñado por Michel Marcell Pérez</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

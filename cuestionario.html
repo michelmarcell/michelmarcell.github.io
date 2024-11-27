@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Logo</a>
+            <ul class="nav-links">
+                <li onclick="navigateTo('index.html')"><a>Inicio</a></li>
+                <li><a href="#cards">Secciones</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="audit-survey">
+            <p>
+                El equipo multidisciplinario de la Universidad de Matanzas desea conocer sus criterios acerca de la auditoría a los sistemas de información, así como los conocimientos y habilidades de los auditores. 
+                Los resultados formarán parte de una técnica de diagnóstico para mejorar el control de los procesos internos y la toma de decisiones.
+            </p>
+
+            <!-- Pregunta 1 -->
+            <h3>1. ¿Conoce usted qué es una auditoría de sistemas automáticos de procesamiento de la información?</h3>
+            <label><input type="radio" name="q1" value="Sí"> Sí</label>
+            <label><input type="radio" name="q1" value="No"> No</label>
+            <div id="q1-details" style="display: none;">
+                <p>Si respondió que sí, indique qué aspectos lo componen:</p>
+                <label><input type="checkbox" name="q1-details" value="Revisión y evaluación"> Revisión y evaluación de todos los aspectos.</label>
+                <label><input type="checkbox" name="q1-details" value="Procedimientos no automáticos"> Procedimientos no automáticos relacionados e interfaces.</label>
+                <label><input type="checkbox" name="q1-details" value="Integración de redes"> Integración de redes y comunicaciones.</label>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <h3>2. ¿Cree que es importante para las entidades realizar controles a la información, los sistemas y las tecnologías?</h3>
+            <label><input type="radio" name="q2" value="Sí"> Sí</label>
+            <label><input type="radio" name="q2" value="No"> No</label>
+
+            <h4>2a. ¿Qué conocimientos considera que debe tener un auditor?</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Áreas</th>
+                        <th>Ninguno</th>
+                        <th>Poco</th>
+                        <th>Medio</th>
+                        <th>Conocimiento</th>
+                        <th>Mucho</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Básicos</td>
+                        <td><input type="radio" name="basic" value="Ninguno"></td>
+                        <td><input type="radio" name="basic" value="Poco"></td>
+                        <td><input type="radio" name="basic" value="Medio"></td>
+                        <td><input type="radio" name="basic" value="Conocimiento"></td>
+                        <td><input type="radio" name="basic" value="Mucho"></td>
+                    </tr>
+                    <tr>
+                        <td>Informática</td>
+                        <td><input type="radio" name="informatics" value="Ninguno"></td>
+                        <td><input type="radio" name="informatics" value="Poco"></td>
+                        <td><input type="radio" name="informatics" value="Medio"></td>
+                        <td><input type="radio" name="informatics" value="Conocimiento"></td>
+                        <td><input type="radio" name="informatics" value="Mucho"></td>
+                    </tr>
+                    <tr>
+                        <td>Auditoría</td>
+                        <td><input type="radio" name="audit" value="Ninguno"></td>
+                        <td><input type="radio" name="audit" value="Poco"></td>
+                        <td><input type="radio" name="audit" value="Medio"></td>
+                        <td><input type="radio" name="audit" value="Conocimiento"></td>
+                        <td><input type="radio" name="audit" value="Mucho"></td>
+                    </tr>
+                    <tr>
+                        <td>Sistemas</td>
+                        <td><input type="radio" name="systems" value="Ninguno"></td>
+                        <td><input type="radio" name="systems" value="Poco"></td>
+                        <td><input type="radio" name="systems" value="Medio"></td>
+                        <td><input type="radio" name="systems" value="Conocimiento"></td>
+                        <td><input type="radio" name="systems" value="Mucho"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>2b. Nivel de actualización sobre legislación</h4>
+            <label>Auditoría: <input type="text" name="audit-knowledge"></label>
+            <label>Informática: <input type="text" name="informatics-knowledge"></label>
+
+            <h4>2c. ¿Cómo obtuvo esta actualización?</h4>
+            <label><input type="checkbox" name="update" value="Superación personal"> Superación personal</label>
+            <label><input type="checkbox" name="update" value="Postgrado"> Postgrado</label>
+            <label><input type="checkbox" name="update" value="Eventos"> Eventos</label>
+            <label><input type="checkbox" name="update" value="Entrenamientos"> Entrenamientos</label>
+            <label><input type="checkbox" name="update" value="Otros"> Otros</label>
+            <label>Si respondió otros, especifique: <input type="text" name="other-updates"></label>
+
+            <!-- Pregunta 3 -->
+            <h3>3. ¿Ha elaborado en algún momento programas de auditoría?</h3>
+            <label><input type="radio" name="q3" value="Sí"> Sí</label>
+            <label><input type="radio" name="q3" value="No"> No</label>
+            <div id="q3-details" style="display: none;">
+                <p>Si respondió que sí, especifique:</p>
+                <label><input type="checkbox" name="q3-details" value="Tecnologías de la información"> Tecnologías de la información</label>
+                <label><input type="checkbox" name="q3-details" value="Sistemas Contables"> Sistemas Contables</label>
+                <label><input type="checkbox" name="q3-details" value="Seguridad Informática"> Seguridad Informática</label>
+                <label>Otros: <input type="text" name="q3-others"></label>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <h3>4. Información personal</h3>
+            <label>Ocupación:
+                <select name="occupation">
+                    <option value="Auditor">Auditor</option>
+                    <option value="Informático">Informático</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </label>
+            <label>Años de experiencia: <input type="number" name="experience" min="0"></label>
+            <label>Edad: 
+                <select name="age">
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="45-65">45-65</option>
+                    <option value="65+">65+</option>
+                </select>
+            </label>
+            <label>Sexo:
+                <select name="gender">
+                    <option value="F">F</option>
+                    <option value="M">M</option>
+                </select>
+            </label>
+
+            <!-- Botones -->
+            <button type="button" onclick="savePDF()">Guardar como PDF</button>
+            <button type="button" onclick="sendToWhatsApp()">Enviar Resultados</button>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <p>© 2024 - Universidad de Matanzas | Diseñado por Michel Marcell Pérez</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelector('input[name="q1"]').addEventListener('change', function() {
+            document.getElementById('q1-details').style.display = this.value === "Sí" ? "block" : "none";
+        });
+
+        document.querySelector('input[name="q3"]').addEventListener('change', function() {
+            document.getElementById('q3-details').style.display = this.value === "Sí" ? "block" : "none";
+        });
+
+        function savePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            doc.text("Resultados de la Encuesta", 10, 10);
+            const formData = new FormData(document.getElementById("audit-survey"));
+            for (const [key, value] of formData.entries()) {
+                doc.text(`${key}: ${value}`, 10, doc.lastAutoTable.finalY + 10);
+            }
+            doc.save("encuesta_auditoria.pdf");
+        }
+
+        function sendToWhatsApp() {
+            const phoneNumber = "58784497";
+            const surveyData = new FormData(document.getElementById("audit-survey"));
+            let message = "Resultados de la Encuesta:\n";
+            for (const [key, value] of surveyData.entries()) {
+                message += `${key}: ${value}\n`;
+            }
+            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`);
+        }
+    </script>
+</body>
+</html>

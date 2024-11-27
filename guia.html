@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Logo</a>
+            <ul class="nav-links">
+                <li onclick="navigateTo('index.html')"><a>Inicio</a></li>
+                <li><a href="#cards">Secciones</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Procedimientos de Auditoría a los Sistemas de Información</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sección</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"><strong>Pruebas de Cumplimiento</strong></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Compruebe si están bien definidas las responsabilidades de los usuarios en los planes de seguridad y contingencias.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Verifique si las áreas vitales aplican un plan de seguridad actualizado según las características de la entidad.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Compruebe si existe el nombramiento de un responsable para la seguridad informática.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Verifique si los usuarios conocen y aplican las medidas de control y protección del plan de seguridad y contingencias.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Revise si el responsable de la seguridad depende jerárquicamente del nivel superior y si está capacitado.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Verifique si los riesgos identificados están documentados y si las vulnerabilidades se contemplan entre ellos.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Revisar que existan y se cumplan procedimientos para el control de bienes y útiles informáticos.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Revisar medidas de protección física, como sistemas de alarma, blindaje, y compartimentación.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Identificar módulos del sistema, sus objetivos, integración y condiciones de instalación.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Revisar si existe garantía de mantenimiento y actualización del sistema informático.</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Identificar fuentes de entrada y salida de datos, realizar inventarios y verificar cumplimiento de regulaciones.</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Confirmar si las vulnerabilidades son actualizadas y los parches aplicados oportunamente.</td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><strong>Pruebas Sustantivas a los Sistemas de Información</strong></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Comprobar controles generales del entorno computacional.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Revisar el control de acceso de usuarios, autorizaciones y desactivaciones.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Evaluar el sistema de control interno y resultados de controles anteriores.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Determinar si las trazas de auditoría se colectan y preservan según la legislación vigente.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Precisar si existe acceso restringido a la base de datos.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Comprobar si los riesgos derivados de la tecnología están identificados y mitigados.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Verificar la estructura y cambio de contraseñas según el riesgo estimado.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Comprobar si las contraseñas cumplen con requisitos de seguridad (números, letras, longitud mínima).</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Revisar pruebas documentales para cubrir brechas de seguridad y errores del sistema.</td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><strong>Controles de Entrada, Procesamiento y Salida</strong></td>
+            </tr>
+            <tr>
+                <td>Entrada</td>
+                <td>
+                    <ul>
+                        <li>Registrar el número del documento primario en las pantallas de captación.</li>
+                        <li>Evitar duplicación de información y validar datos antes de procesarlos.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Procesamiento</td>
+                <td>
+                    <ul>
+                        <li>Actualizar ficheros maestros de manera centralizada.</li>
+                        <li>Controlar borrado de artículos y verificar integridad del sistema.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Salida</td>
+                <td>
+                    <ul>
+                        <li>Permitir reimpresión y selección de rangos de páginas.</li>
+                        <li>Controlar quién realizó la operación y el destino de la información extraída.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer id="footer">
+        <p>© 2024 - Universidad de Matanzas | Diseñado por Michel Marcell Pérez</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
