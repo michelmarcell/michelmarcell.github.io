@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Logo</a>
+            <ul class="nav-links">
+                <li onclick="navigateTo('index.html')"><a>Inicio</a></li>
+                <li><a href="#cards">Secciones</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Descargue el manual aqui</h1>
+    <a class="pdf-button" href="assets/files/Manual-de-Preswin-9.1.pdf" download="Manual-de-Preswin-9">Descargar PDF</a>
+    <style>
+        .pdf-button {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px, 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        
+    </style>
+    
+</body>
+<script src="script.js"></script>
